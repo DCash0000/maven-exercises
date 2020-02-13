@@ -1,34 +1,31 @@
 //import java.sql.SQLOutput;
 import org.apache.commons.lang3.StringUtils;
 
+import javax.print.MultiDocPrintService;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //import java.util.Scanner;
 public class StringUtil {
     public static void main(String[] args) {
-
-    }
-
-
-    private static boolean isNumeric() {
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter only a number: ");
-        int userInput = scanner.nextInt();
-        System.out.println("Great you entered: " +userInput);
-        return org.apache.commons.lang3.StringUtils.isNumeric("");
+        System.out.println("Enter a only a number: ");
+        String userInput = scanner.nextLine();
+        System.out.println(StringUtils.isNumeric(userInput));
+
+
+        System.out.println("\n" + "Enter a string to flip: ");
+        String userInput2 = scanner.nextLine();
+        System.out.println(StringUtils.swapCase(userInput2));
+
+
+        System.out.println("\n" + "Enter a string to be reversed: ");
+        String userInput3 = scanner.nextLine();
+        System.out.println(StringUtils.reverse(userInput3));
     }
 
 
-
-//    public static void userInput(){
-//        Scanner scanner = new Scanner(System.in);
-//        System.out.println("Enter a number: ");
-//        String userInput = scanner.nextLine();
-//        int i = 0;
-//        if(i != 0)
     }
-
 
 
 
